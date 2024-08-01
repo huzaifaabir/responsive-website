@@ -12,15 +12,18 @@ body {
 }
 
 .container {
-    width: 1140px;
-    margin: auto;
+    max-width: 1140px;
+    margin:0 auto;
+}
+button{
+    border: none;
+    background: none;
 }
 
 /* basic css */
 
 /* navbar start */
 #header .navbar {
-    width: 1140px;
     height: 131px;
     display: flex;
     justify-content: space-between;
@@ -29,55 +32,41 @@ body {
 }
 
 #header .navbar h1 {
-    font-size: 28px;
+    font-size: 1.7rem;
     font-weight: 800;
     line-height: 33px;
     letter-spacing: 0%;
     text-align: left;
 }
 
-#header .navbar button {
-    box-sizing: border-box;
-    border: 1px solid rgb(13, 19, 33);
-    background-color: white;
-    border-radius: 8px;
-    opacity: 0.8;
-    width: 228px;
-    height: 58px;
-    transition: all 0.2s linear;
-}
-
-#header .navbar button:hover {
-    background-color: rgb(233, 233, 233);
-}
-
 #header .navbar button a {
-    font-size: 20px;
+    font-size:1.2rem;
     font-weight: 600;
     line-height: 23px;
     letter-spacing: 0%;
     text-align: center;
+    padding: 17px 24px;
     color: rgb(13, 19, 33);
     text-decoration: none;
+    border: 1px solid rgb(13, 19, 33);
+    background-color: white;
+    border-radius: 8px;
+    opacity: 0.8;
 }
 
 /* navbar end */
+
 /* slide start */
 
-#header .slider {
+.slider {
     width: 100%;
-    height: 652px;
-    background: url(../assets/Hero-bg.png);
     margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: url(../assets/Hero-bg.png);
+    padding: 44px 0px;
 }
 
 #header .slider-content {
-    width: 998px;
-    height: 300px;
+    max-width: 998px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -86,13 +75,11 @@ body {
 }
 
 #header .slider-content .image {
-    width: 240.28px;
-    height: 240px;
     margin-bottom: 32px;
 }
 
 #header .slider-content .title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 68px;
     letter-spacing: 0%;
@@ -103,7 +90,7 @@ body {
 
 #header .slider-content .discription {
     color: rgb(13, 19, 33);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
@@ -112,51 +99,39 @@ body {
     margin-bottom: 32px;
 
 }
-
-#header .slider-content .btn button {
-    width: 208px;
-    height: 66px;
-    border: none;
-    border-radius: 8px;
-    background: rgb(13, 19, 33);
-}
-
 #header .slider-content .btn a {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 23px;
     letter-spacing: 0%;
     text-align: center;
     text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    background: rgb(13, 19, 33);
+    padding: 20px 24px;
 
 }
 
 /* slide end */
 /* FAQ-section start */
+#faq-section {
+    margin: 75px 0px;
+}
 #faq-section .faq-container {
-    width: 1140px;
-    height: 1393px;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
-    margin: 74px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 40px 0px;
+    padding: 80px 0px;
 }
-
-#faq-section .faq-content {
-    width: 946px;
-    margin: 0px auto;
-    background-color: aquamarine;
+#faq-section .faq-main-content{
+    max-width: 946px;
 }
-
 
 #faq-section .faq-container .faq-header h1 {
     color: rgb(13, 19, 33);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 37px;
     letter-spacing: 0%;
@@ -166,7 +141,7 @@ body {
 
 #faq-section .faq-container .faq-header p {
     color: rgb(13, 19, 33);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
@@ -176,8 +151,6 @@ body {
 }
 
 #faq-section .faq-main-content {
-    width: 946px;
-    height: 1233px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -208,14 +181,9 @@ body {
     padding: 48px;
 }
 
-#faq-section .faq-container .faq-header img {
-    width: 240px;
-    height: 240px;
-}
-
 #faq-section .faq-main-content .text h1 {
     color: rgba(13, 19, 33, 0.7);
-    font-size: 24px;
+    font-size: 1.5rem ;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0%;
@@ -225,7 +193,7 @@ body {
 
 #faq-section .faq-main-content .text p {
     color: rgb(13, 19, 33);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
@@ -233,24 +201,18 @@ body {
     margin-bottom: 32px;
 
 }
-
-#faq-section .faq-main-content .text button {
-    width: 171px;
-    height: 47px;
-    box-sizing: border-box;
-    border: 1px solid rgb(13, 19, 33);
-    opacity: 0.7;
-    background-color: white;
-}
-
-#faq-section .faq-main-content .text button a {
+#faq-section .faq-main-content .text a {
     color: rgb(13, 19, 33);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0%;
     text-align: center;
+    border: 1px solid rgb(13, 19, 33);
+    opacity: 0.7;
+    background-color: white;
+    padding: 12px 20px;
 
 }
 
@@ -258,7 +220,6 @@ body {
 /* inspiration-section start*/
 #inspiration {
     margin: 74px auto;
-    height: 775px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,7 +233,7 @@ body {
 
 #inspiration .header h1 {
     color: rgb(13, 19, 33);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 37px;
     letter-spacing: 0%;
@@ -282,7 +243,7 @@ body {
 
 #inspiration .header p {
     color: rgb(13, 19, 33);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
@@ -292,20 +253,18 @@ body {
 }
 
 #inspiration .video {
-    width: 1140px;
+    max-width: 1140px;
     height: 614px;
+    padding: 20px;
     border: 1px solid rgba(13, 19, 33, 0.2);
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
 
 #inspiration .video iframe {
 
-    width: 1076px;
-    height: 550px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     border-radius: 16px;
 
