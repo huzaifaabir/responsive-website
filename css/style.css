@@ -273,13 +273,8 @@ button{
 /* inspiration-section end */
 
 /* target-section start */
-#target .target-section {
+#target{
     margin: 74px auto;
-    height: 460px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #target .target-section .header {
@@ -289,7 +284,7 @@ button{
 
 #target .target-section .header h1 {
     color: rgb(13, 19, 33);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 37px;
     letter-spacing: 0%;
@@ -300,7 +295,7 @@ button{
 #target .target-section .header p {
     color: rgb(13, 19, 33);
     opacity: 0.7;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
@@ -314,30 +309,34 @@ button{
     gap: 24px;
 }
 
-#target .target-item .item-section {
+#target .target-item .html-section {
+    flex: 1;
+    background: rgba(255, 76, 30, 0.05);
     border-radius: 16px;
     padding: 40px;
 }
 
-#target .target-section .html-section {
-    background: rgba(255, 76, 30, 0.05);
-}
-
-#target .target-section .css-section {
+#target .target-item .css-section {
+    flex: 1;
     background: rgba(0, 76, 232, 0.05);
+    border-radius: 16px;
+    padding: 40px;
 }
 
-#target .target-section .js-section {
+#target .target-item .js-section {
+    flex: 1;
     background: rgba(255, 223, 0, 0.05);
+    border-radius: 16px;
+    padding: 40px;
 }
 
-#target .target-item .item-section img {
+#target .target-item img {
     margin-bottom: 24px;
 }
 
-#target .target-item .item-section h1 {
+#target .target-item h1 {
     color: rgb(13, 19, 33);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
     line-height: 36px;
     letter-spacing: 0%;
@@ -345,10 +344,10 @@ button{
     margin-bottom: 8px;
 }
 
-#target .target-item .item-section p {
+#target .target-item p {
     opacity: 0.7;
     color: rgb(13, 19, 33);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
@@ -358,15 +357,9 @@ button{
 
 }
 
-
-#target .target-item .item-section button {
-    background: none;
-    border: none;
-}
-
-#target .target-item .item-section button a {
+#target .target-item a {
     color: rgb(13, 19, 33);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0%;
